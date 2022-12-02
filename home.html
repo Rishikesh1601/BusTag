@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Bus Tag</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="home.html"><img src="WhatsApp Image 2022-11-09 at 10.11.12 PM.jpeg"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-close" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">MEDIA</a></li>
+					<li><a href="">SERVICE</a></li>
+					<li><a href="">PROFILE</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()" ></i>
+		</nav>
+	<div class="text-box">
+		<h1>E-Ticket System For Public Transport</h1>
+        <p>The journey of a thousand miles begins with a single step.</p>
+		<a href="pay.html" class="hero-btn">Show QR code to scanner</a>
+		<a href="maps.html" class="hero-btn">Track buses near you</a>
+	</div>
+	</section>
+
+	<!------- services ---------->
+	<section class="products">
+		<h1>Services provided by us</h1>
+		<p>now explore all the public transport at your finger tips</p>
+
+		<div class="row">
+			<div class="products-col">
+				<h3>One Step Ahead</h3>
+				<img src="One step ahead.jpeg">
+				<p>Usage of RFID scanner for automatic payment</p>
+			</div>
+			<div class="products-col">
+				<h3>Tracking Buses</h3>
+				<img src="Track the Bus.jpeg">
+				<p>Finding the nearest public transport and bus stations</p>
+			</div>
+			<div class="products-col">
+				<h3>Online Pass</h3>
+				<img src="bus pass.jpeg">
+				<p>Take pass online with very few steps</p>
+			</div>
+			<div class="products-col">
+				<h3>Easy Payments</h3>
+				<img src="images.jpeg">
+				<p>Cashless Payment with inbuilt wallet or UPI apps</p>
+			</div>
+		</div>
+		<h6>* terms and condition apply</h6>
+	</section>
+	<!----- footer----->
+	<section class="as">
+		<div class="footer-container">
+				<ul class="popular">
+					<li><h2>BUSTAG ©</h2></li>
+				</ul>
+				<ul class="contact"> 
+					<li><h2>Contact Us</h2></li> 
+					<li>WhatsApp us : <span style="display: inline-block; "><a href="https://wa.me/919423922227?text=Hi" target="_blank" rel="noopener">9423922227</a></span></li>
+					<li>Call Us : <span style="display: inline-block;"><a href="tel:8975112227" target="_blank" rel="noopener">8956620910</a></span></li>
+					<br><br>
+				<div class="icons">
+			<a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook" style="font-size:24px;color:blue" > </i></a> 
+			<i class="fa fa-instagram" style="font-size:24px;color:red"></i>
+			<i class="fa fa-whatsapp" style="font-size:24px;color:green"></i>
+		</div>
+		<br>
+	</ul>
+			</div>
+		
+	</section>
+	
+	<!-----java script for toogle menu---->
+<script>
+	var navLinks = document.getElementsByTagName('navLinks');
+	function showMenu(){
+		navLinks.style.right="0";
+	}
+	function hideMenu(){
+		navLinks.style.right="-200px";
+	}
+</script>
+
+
+
+</body>
+</html>

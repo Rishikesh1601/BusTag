@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+    function validate()
+    {
+        var my_pwd = document.getElementById("password");
+        var my_re = document.getElementById("confirm_password");
+        if(my_pwd.value!=my_re.value){
+            alert("passwords are different")
+            my_pwd.focus();
+            my_pwd.select();
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+    <section class="signup">
+        <h1 class="h1">Signup</h1>
+        <div class="form">
+        <form name="my_form" id="sidebar">
+            <hr>
+                <!-- label should be used to define what to write-->
+                <!-- here first make First name and last name labels and take user i/p-->
+                <h2 class="name-one">Name</h2>
+                <input class="firstname" type="text" name="firstname" placeholder="firstname" pattern="^[a-z]+$" minlength="3" required><br>
+                <label class="firstlable">First name </label>
+                <input class="lastname" type="text" name="lastname" placeholder="last name" pattern="^[a-z]+$" required>
+                <label class="lastlable">Last name </label> 
+                <!---email-->
+                <h2 class="name">Email</h2>
+                <input class="email" type="email" name="email" placeholder="enter email id" required>
+                <!---mobile number-->
+                <h2 class="name">Mobileno.</h2>
+                <input class="number" type="tel" name="phone_number" id="phone_number" pattern="^\d{10}$" required="required"/>
+                <!-- now take the password from user-->
+                <h2 class="name">Password</h2>
+                <input class="password" type="password" value="" placeholder="Password" id="password" required>
+                <h2 class="name">Confirm Password</h2>
+                <input class="confirm_pass" type="password" value="" placeholder="Confirm Password" id="confirm_password" required>
+                <br><br><br><br>
+                <button type="submit" class="submit" onsubmit="validate();"><a href="Index.html"  >SUBMIT</a></button>
+                <!---or using email facebook or whatsapp-->
+                <p class="p">---OR SIGNUP THROUGH---</p>
+                <br>
+                <div class="media">
+                <ul>
+                    <li><i class="fa fa-google" ></i></li>
+                    <li><i class="fa fa-facebook" ></i></li>
+                    <li><i class="fa fa-instagram" ></i></li>
+                    <li><i class="fa fa-whatsapp" ></i></li>
+                    <li><i class="fa fa-twitter" ></i></li>
+                </ul>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
